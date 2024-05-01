@@ -12,6 +12,13 @@ Este projeto foi elaborado pensando em garantir uma cobertura de testes.
 ````text
 
 |__src (java root path projeto)
+
+
+
+    |.github (Configuração para execução via pipeline do GitHub Actions)
+    |allure-results
+    |Evidencias (Para visualizar bastar abrir com um navegador da sua preferencia)
+    |src
     |__main
     |  |__java
     |  |  |__io.agibank.blogdoagi
@@ -31,6 +38,8 @@ Este projeto foi elaborado pensando em garantir uma cobertura de testes.
     |      |__tests
     |__pom.xml (Contém as dependências relacionada ao projeto)
     |__.gitignore (Contém o diretório de arquivos que devem ser ignorados no momento do commit)   
+    |jenkinsfile (Configuração para execução via pipeline jenkins)
+    |readme.md
 ````
 
 ## Como executar os testes
@@ -58,9 +67,10 @@ Selecionar Browser
 mvn test  -Dgroups="pix",-DBrowser=HEADLESS
 ```
 ## Relatório customizado
-Após execução do teste a automação gera um relatorio com as evidências do teste localizado na raiz do projeto dentro da pasta:<br>
+Após execução do teste a automação gera um relatorio html com as evidências do teste localizado na raiz do projeto na pasta:<br>
 
-Evidencias.
+Evidencia.
+(Basta abrir o arquivo com um navegador da sua preferência.)
 
 ## Allure 
 Após a execução dos testes é possivel gerar o relatório com a biblioteca Allure tanto Local como no github com actions integration, e assim visualizar os resultados de forma mais simplificada.<br> 
@@ -71,5 +81,5 @@ Local: Basta executar o comando:
 ```bash
 mvn allure:serve
 ```
-Github: Bastar clicar no link:
+Github: Após a execução e deploy do allure bastar clicar no link:
 'github-pages'
