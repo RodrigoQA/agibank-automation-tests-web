@@ -1,0 +1,12 @@
+# User-specific stuff
+.idea/**/workspace.xml
+.idea/
+.allure/
+.DS_Store
+Evidencias/
+/target/
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.xml
