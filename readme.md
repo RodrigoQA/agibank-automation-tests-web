@@ -58,11 +58,18 @@ Selecionar Browser
 mvn test  -Dgroups="pix",-DBrowser=HEADLESS
 ```
 ## Relatório customizado
-Apos execução do teste a automação gera um relatorio com as evidencias do teste localizado na raiz do projeto dentro da pasta 
+Após execução do teste a automação gera um relatorio com as evidências do teste localizado na raiz do projeto dentro da pasta:<br>
+
 Evidencias.
 
 ## Allure 
-Após a execução dos testes é possivel gerar o relatório com a biblioteca Allure, e desta forma, visualizar os resultados de forma mais simplificada, Para visualizar o relatório 
-basta executar o comando:
+Após a execução dos testes é possivel gerar o relatório com a biblioteca Allure tanto Local como no github com actions integration, e assim visualizar os resultados de forma mais simplificada.<br> 
+
+Para visualizar o relatório:<br>
+
+Local: Basta executar o comando:
 ```bash
 mvn allure:serve
+```
+Github: Bastar clicar no link:
+'github-pages'
