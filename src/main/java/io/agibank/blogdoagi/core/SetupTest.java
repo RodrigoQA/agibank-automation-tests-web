@@ -19,7 +19,7 @@ public class SetupTest extends DriverFactory{
 
     @BeforeEach
     public void inicializarBrowser(TestInfo testInfo) {
-        openBrowser(Navegadores.CHROME,"https://blogdoagi.com.br/");
+        openBrowser(Navegadores.HEADLESS,"https://blogdoagi.com.br/");
         EvidenceReport.nomeCenario = testInfo.getDisplayName();
         EvidenceReport.novoCenario = true;
 
